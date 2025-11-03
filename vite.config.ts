@@ -12,5 +12,16 @@ export default defineConfig({
     port: parseInt(process.env.PORT || '4173'),
     strictPort: false,
     cors: true,
+    allowedHosts: [
+      'tradecalcs-platform-v4-production.up.railway.app',
+      '.railway.app',
+      'localhost',
+      '127.0.0.1',
+    ],
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
   },
 })
+
