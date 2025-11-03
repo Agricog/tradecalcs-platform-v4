@@ -13,7 +13,9 @@ export default defineConfig({
     strictPort: false,
     cors: true,
     allowedHosts: [
-      '.railway.app',           // ✅ Covers ALL Railway URLs
+      'tradecalcs.co.uk',         // Your custom domain
+      'www.tradecalcs.co.uk',     // www subdomain
+      '.railway.app',              // All Railway URLs
       'localhost',
       '127.0.0.1',
     ],
