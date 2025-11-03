@@ -12,5 +12,15 @@ export default defineConfig({
     port: parseInt(process.env.PORT || '4173'),
     strictPort: false,
     cors: true,
+    allowedHosts: [
+      '.railway.app',           // ✅ Covers ALL Railway URLs
+      'localhost',
+      '127.0.0.1',
+    ],
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
   },
 })
+
