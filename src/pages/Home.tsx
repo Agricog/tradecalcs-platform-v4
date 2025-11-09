@@ -1,3 +1,4 @@
+console.log('HOME DEBUG: THIS VERSION SHOULD LOG IN THE BROWSER');
 import { Calculator, Zap, Shield, Smartphone, ArrowRight, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
