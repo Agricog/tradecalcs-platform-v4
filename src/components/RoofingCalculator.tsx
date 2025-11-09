@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Calculator, ArrowRight } from 'lucide-react'
+import { useState } from 'react'
+import { ArrowRight } from 'lucide-react'
 
 interface RoofingCalcState {
   roofLength: number
