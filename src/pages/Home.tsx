@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Popular Tools Section */}
+      {/* Popular Tools Section - NOW WITH 3 COLUMNS */}
       <section className="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -107,7 +107,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Link
               to="/tools/cable-calculator"
               className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
@@ -134,6 +134,22 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Voltage Drop Calculator</h3>
               <p className="text-gray-600 mb-4">
                 Calculate voltage drop for any circuit length and load
+              </p>
+              <span className="text-purple-600 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                Try it now <ArrowRight className="ml-2 w-4 h-4" />
+              </span>
+            </Link>
+
+            <Link
+              to="/tools/roofing"
+              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
+            >
+              <div className="bg-gradient-to-br from-purple-600 to-blue-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Zap className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Roofing Calculator</h3>
+              <p className="text-gray-600 mb-4">
+                Calculate roofing materials with pitch angle adjustments
               </p>
               <span className="text-purple-600 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
                 Try it now <ArrowRight className="ml-2 w-4 h-4" />
@@ -257,3 +273,4 @@ export default function Home() {
     </div>
   );
 }
+
