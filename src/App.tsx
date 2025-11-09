@@ -10,6 +10,7 @@ import TermsOfService from './pages/TermsOfService';
 import CableCalculator from './components/CableCalculator';
 import VoltageDropCalculator from './components/VoltageDropCalculator';
 import BSPThreadFinder from './components/BSPThreadFinder';
+import RoofingCalculator from './components/RoofingCalculator';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/tools/cable-calculator" element={<CableCalculator />} />
             <Route path="/tools/voltage-drop" element={<VoltageDropCalculator />} />
             <Route path="/tools/bsp-finder" element={<BSPThreadFinder />} />
+            <Route path="/tools/roofing" element={<RoofingCalculator />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />
